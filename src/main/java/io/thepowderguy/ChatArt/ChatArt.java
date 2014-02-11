@@ -25,10 +25,12 @@ public class ChatArt extends JavaPlugin {
 			}
 			if (getConfig().getStringList("art." + args[0]) != null)
 			{
-				for (Integer index = 0; index < getConfig().getStringList("art." + args[0]).size();)
+				List<String> artlist = getConfig().getStringList("art." + args[0]);
+				for (int index = 0; index < artlist.size(); index++)
 				{
-					getServer().broadcastMessage(getConfig().getString("prefix") + getConfig().getStringList("art." + args[0]).get(index));
+					getServer().broadcastMessage(getConfig().getString("prefix") + artlist.get(index));
 				}
+				return true;
 			}
 		}
 		return false;
