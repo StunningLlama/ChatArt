@@ -1,5 +1,6 @@
 package io.github.thepowderguy.ChatArt;
 
+import java.util.List;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
