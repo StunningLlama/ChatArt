@@ -1,1 +1,10 @@
-#init
+ame: ChatArt
+main: io.thepowderguy.ChatArt.ChatArt
+version: 0.1
+authors: [thepowderguy,2insanepeople]
+commands:
+   art:
+      description: Prints art to the chat
+      usage: '/art <name>'
+      permission: chatart.art
+      permission-message: You don't have permission for this command.
